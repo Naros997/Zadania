@@ -1,6 +1,6 @@
-#include <iostream>
-#include <cmath>
 #define _USE_MATH_DEFINES
+#include <cmath>
+#include <iostream>
 
 using namespace std;
 double v;
@@ -10,7 +10,7 @@ int main()
 {
 	cout << "Podaj kat rzutu :"; cin >> a;
 	cout << "Podaj predkosc rzutu :"; cin >> v;
-	double r = ((3.14 * a) / 180);
+	double r = ((a * M_PI) / 180);
 	double zasieg = ((v*v)*(sin(2*r))) / g;
 	double czlot = (2 * v* sin(r)) / g;
 	double maxlot = (pow(v* sin(r), 2) * 2 * g);
